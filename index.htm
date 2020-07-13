@@ -31,8 +31,7 @@
                     10.0,BABYLON.Vector3.Zero(),scene);
                 camera.attachControl(canvas,true);
 
-                var light = new BABYLON.PointLight("PointLight",new BABYLON.Vector3(0,0,0),scene);
-                light.parent = camera;
+                var light = new BABYLON.PointLight("PointLight",new BABYLON.Vector3(1,0,0),scene)
                 light.intensity = 1.5;
 
                 return scene;
