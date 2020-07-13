@@ -24,8 +24,8 @@
             var createScene = function () 
             {
                 var scene = new BABYLON.Scene(engine);
-               // var camera = new BABYLON.ArcRotateCamera("Camera", Math.PI / 2, Math.PI / 2, 2, new BABYLON.Vector3(0,0,5), scene);
-                //camera.attachControl(canvas, true);
+                var camera = new BABYLON.ArcRotateCamera("Camera", Math.PI / 2, Math.PI / 2, 2, new BABYLON.Vector3(0,0,5), scene);
+                camera.attachControl(canvas, true);
                 return scene;
             }
 
@@ -35,8 +35,8 @@
             BABYLON.SceneLoader.Append("scenes/", "untitled.glb", scene, function (scene) 
             {
                 // Create a default arc rotate camera and light.
-                scene.createDefaultCameraOrLight(true, true, true);
-                scene.activeCamera.alpha += Math.PI;
+                //scene.createDefaultCameraOrLight(true, true, true);
+                //scene.activeCamera.alpha += Math.PI;
             });
     
             
